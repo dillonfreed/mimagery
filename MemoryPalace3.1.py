@@ -7,7 +7,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-st.secrets["openai_key"] 
+st.secrets[apikey] 
 
 # App framework
 
