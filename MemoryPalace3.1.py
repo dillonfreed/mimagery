@@ -1,11 +1,5 @@
 # Bring in deps
-import os 
 
-import streamlit as st 
-from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain, SequentialChain 
-from langchain.memory import ConversationBufferMemory
-from langchain.utilities import WikipediaAPIWrapper 
 
 st.title('🖤MEMORY PALACE CREATOR')
 prompt = st.text_input('Create your memory palace, list the furntire in your room, and then add whatever you wish to learn (e.g.the first 10 elements of the periodic table). Here is an example of how the input should look: desk, table, chair, pillow, blanket, stove, picture, furnace, desk \\ I want to learn the most important 10 wars of the 20th century in chronological order') 
