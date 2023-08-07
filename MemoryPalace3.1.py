@@ -7,8 +7,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-st.secrets(apikey)
-
+st.secrets
 # App framework
 
 st.title('🖤MEMORY PALACE CREATOR')
