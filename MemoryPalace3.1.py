@@ -16,12 +16,12 @@ prompt = st.text_input('Create your memory palace, list the furntire in your roo
 # Prompt templates
 title_template = PromptTemplate(
     input_variables = ['topic'],  
-    template='"""You are a master at hleping people remember things by using the Method of Loci  {topic}'
+    template='You are a master at hleping people remember things by using the Method of Loci  {topic}'
 )
 
 script_template = PromptTemplate(
     input_variables = ['title'], 
-    template='Now, create a "method of loci"story with the ListA and ListC that you created {title} '
+    template='Now create a "method of loci"story with the ListA and ListC that you created {title} '
 )
 
 # Memory 
