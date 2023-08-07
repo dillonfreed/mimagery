@@ -16,7 +16,7 @@ prompt = st.text_input('Create your memory palace, list the furntire in your roo
 
 # Prompt templates
 title_template = PromptTemplate(
-    input_variables = ['topic'],  
+    input_variables = ['topic'] 
     template='"""fFirst, create a numebered list 1 \
         which is a list the furniture items for the user input \
             Second, create a break and an enitrely new list called list 2 by producing whatever the user user wishes to learn \
