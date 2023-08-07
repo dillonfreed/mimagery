@@ -8,7 +8,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 from pydantic import BaseModel
-
+import json
 
 # App framework
 st.title('🖤MEMORY PALACE CREATOR')
