@@ -2,7 +2,6 @@
 import os 
 
 import streamlit as st 
-from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
 from langchain.memory import ConversationBufferMemory
