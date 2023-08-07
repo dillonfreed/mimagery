@@ -17,11 +17,7 @@ prompt = st.text_input('Create your memory palace, list the furntire in your roo
 # Prompt templates
 title_template = PromptTemplate(
     input_variables = ['topic'], 
-    template='"""fFirst, create a numebered list 1 \
-        which is a list the furniture items for the user input \
-            Second, create a break and an enitrely new list called list 2 by producing whatever the user user wishes to learn \
-                  Create a relavant image that would is symbolic would immediately recognize as an assocation for each item in list #2 \
-                   Here are some examples of images: for Russia: Bear; Hydrogen: Zeppelin blimp; NYC: A Big Apple; etc. {topic}'
+    template='"""fFirst, create a numebered list 1 which is a list the furniture items for the user input. Second, create a break and an enitrely new list called list 2 by producing whatever the user user wishes to learn. Create a relavant image that would is symbolic would immediately recognize as an assocation for each item in list #2. Here are some examples of images: for Russia: Bear; Hydrogen: Zeppelin blimp; NYC: A Big Apple; etc. {topic}'
 )
 
 script_template = PromptTemplate(
