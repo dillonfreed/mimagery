@@ -6,8 +6,12 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
-from st.secrets import apikey  
-os.environ['OPENAI_API_KEY'] = apikey
+from typing import Any, List
+
+from typing_extensions import Annotated
+
+from pydantic import BaseModel, ValidationError
+from pydantic.functional_validators import AfterValidator
 # App framework
 
 st.title('🖤MEMORY PALACE CREATOR')
