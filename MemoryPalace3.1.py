@@ -7,7 +7,12 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
+import streamlit as st
 
+openai_key = st.secrets["openai_key"] 
+
+openai.api_key = openai_key
+llm = OpenAI(openai_api_key=openai.api_key)
 # App framework
 
 st.title('🖤MEMORY PALACE CREATOR')
