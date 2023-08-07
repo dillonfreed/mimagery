@@ -25,7 +25,7 @@ title_template = PromptTemplate(
 )
 
 script_template = PromptTemplate(
-    input_variables = ['title'], 
+    input_variables = ['title'] 
     template='Create a "method of loci"story with the two lists \
         so that list 1 items are used in order \
           with the leanring material on list 2 \
