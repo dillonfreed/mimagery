@@ -7,7 +7,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 from st.secrets import apikey  
-
+os.environ['OPENAI_API_KEY'] = apikey
 # App framework
 
 st.title('🖤MEMORY PALACE CREATOR')
