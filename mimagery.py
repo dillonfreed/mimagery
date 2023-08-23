@@ -1,5 +1,4 @@
 # Bring in deps
-import os 
 
 import streamlit as st 
 from langchain.llms import OpenAI
@@ -8,7 +7,11 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-os.environ['OPENAI_API_KEY'] = apikey
+
+import os
+st.write(
+	os.environ["apikey"] == st.secrets["apikey"])
+
 # App framework
 st.title('🦜Memorize 10 Times Fast')
 prompt = st.text_input('List the items in your room in order that they come to mind, and tell us 10 things you want to be able to rememmber, for example the top 10 wars of the 20th century') 
