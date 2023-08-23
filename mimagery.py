@@ -8,7 +8,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-os.environ['OPENAI_API_KEY'] = apikey
+os.environ
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
