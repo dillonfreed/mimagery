@@ -9,8 +9,7 @@ from langchain.utilities import WikipediaAPIWrapper
 
 
 import os
-st.write(
-	os.environ["apikey"] == st.secrets["apikey"])
+os.environ['OPENAI_API_KEY'] = apikey == st.secrets["apikey"])
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
