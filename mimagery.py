@@ -8,7 +8,6 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-os.environ
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
