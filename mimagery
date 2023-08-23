@@ -1,5 +1,7 @@
 # Bring in deps
 
+import os 
+
 import streamlit as st 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
@@ -7,12 +9,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-
-def load_LLM(openai_api_key):
-    """Logic for loading the chain you want to use should go here."""
-    # Make sure your openai_api_key is set as an environment variable
-    llm = OpenAI(temperature=.7, openai_api_key=openai_api_key)
-    return llm
+os.environ['OPENAI_API_KEY'] = openai_api_key
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
