@@ -8,8 +8,11 @@ from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
 
-import os
-os.environ == st.secrets["apikey"])
+def load_LLM(openai_api_key):
+    """Logic for loading the chain you want to use should go here."""
+    # Make sure your openai_api_key is set as an environment variable
+    llm = OpenAI(temperature=.7, openai_api_key=openai_api_key)
+    return llm
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
