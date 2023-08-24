@@ -1,6 +1,5 @@
 # Bring in deps
-import os 
-from st.secrets import ["api_key"]
+
 
 import streamlit as st 
 from langchain.llms import OpenAI
@@ -9,7 +8,8 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-os.environ['OPENAI_API_KEY'] = st.secrets["api_key"]
+import os
+os.environ['OPENAI_API_KEY'] = ["api_key"]
 
 # App framework
 st.title('🦜Memorize 10 Times Fast')
