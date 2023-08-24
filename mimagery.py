@@ -1,6 +1,6 @@
 # Bring in deps
 import os 
-from apikey import apikey 
+from st.secrets = ["api_key"] import apikey 
 
 import streamlit as st 
 from langchain.llms import OpenAI
