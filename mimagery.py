@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 from langchain.llms import OpenAI
-from dummykey import apikey 
 
 os.environ['OPENAI_API_KEY'] = apikey
 
