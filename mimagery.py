@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from langchain.llms import OpenAI
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'api_key'
 
 st.title = ('Mimagery')
 prompt = st.text_input('Enter your prompt here')
