@@ -17,6 +17,6 @@ if prompt:
  response = llm(prompt)
  st.write(response) 
 
-!streamlit run Langchain25
+
 
 
